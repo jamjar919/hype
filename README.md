@@ -1,10 +1,10 @@
 # hype
-Simple image slideshow fader for jQuery. Like, really simple. It just fades an array of imagers into one another, with some basic options. This was made to replace a hyperesources animation, hence the name.
+Simple image slideshow fader for jQuery. Like, really simple. It just fades an array of images into one another, with some basic options. This was made to replace a hyperesources animation, hence the name.
 
 Here's a demo - http://thejamespaterson.com/scripts/hype/.
 
 ## Install instructions
-It's a jQuery plugin - include jQuery on the page, then include the script `jquery.hype.min.js` or `jquery.hype.js`. Then, call `$(selector).hype(options)` on the element you want to turn into a slideshow
+It's a jQuery plugin - include jQuery on the page, then include the script `jquery.hype.min.js` or `jquery.hype.js`. Then, call `$(selector).hype(options)` on the element you want to turn into a slideshow.
 
 ## Options
 Options are JSON, with the defaults: 
