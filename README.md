@@ -4,7 +4,7 @@ Simple image slideshow fader for jQuery. Like, really simple. It just fades an a
 Here's a demo - http://thejamespaterson.com/scripts/hype/.
 
 ## Install instructions
-It's a jQuery plugin - include jQuery on the page, then include this script. Then, call `$(selector).hype(options)` on the element you want to turn into a slideshow
+It's a jQuery plugin - include jQuery on the page, then include the script `jquery.hype.min.js` or `jquery.hype.js`. Then, call `$(selector).hype(options)` on the element you want to turn into a slideshow
 
 ## Options
 Options are JSON, with the defaults: 
@@ -38,3 +38,17 @@ Adds a float value to the parent element. Set to `none`, `left` or `right`.
 
 ##### height and width
 Sets the height and width of the element, obviously. 
+
+
+# Example
+Look at the example directory for the full images and code of the example. Here is the initiation script as this is likely the bit you want.
+
+      $("#example").hype({
+        images: [
+          "coffee_truffle.jpg",
+          "orange.png",
+          "rasberry.png"
+        ],
+        height: 206,
+        width: 388,
+      });
