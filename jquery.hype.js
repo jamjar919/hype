@@ -16,21 +16,14 @@
     this.css("width", options.width);
     this.css("overflow", "hidden");
     this.css("position", "relative");
-    var z1 = `#${options.id}-z1`;
-    var z2 = `#${options.id}-z2`;
-    this.append(`
-	<div id="${options.id}-z1" style="z-index: 2; position: absolute;width: 100%;height: 100%;">
-		<img>
-	</div>
-	<div id="${options.id}-z2" style="z-index: 1; position: absolute;width: 100%;height: 100%;">
-		<img>
-	</div>
-	`);
+    var z1 = '#'+options.id+'-z1';
+    var z2 = '#'+options.id+'-z2';
+    this.append('<div id="'+options.id+'-z1" style="z-index: 2; position: absolute;width: 100%;height: 100%;"><img></div><div id="'+options.id+'-z2" style="z-index: 1; position: absolute;width: 100%;height: 100%;"><img></div>');
     
     var z1Top = true;
     var nextImage = 1;
-    var image1 = $(`${z1} > img`)[0];
-    var image2 = $(`${z2} > img`)[0];
+    var image1 = $(z1+' > img')[0];
+    var image2 = $(z2+' > img')[0];
     
     if (options.images.length > 0) {
       image1.src = options.images[0];
